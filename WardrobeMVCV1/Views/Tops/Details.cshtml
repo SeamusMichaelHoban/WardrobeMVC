@@ -6,61 +6,122 @@
 
 <h2>Details</h2>
 
-<div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
+<h4>Top</h4>
+<hr />
+@*added card per instructions*@
+@*<div class="card">
+    <img src="~/Images/Departwest Flannel.jpg" id="card" alt="Avatar" @*style="width:100%"*@>
+    @*<div class="container">
+        <h4><b></b></h4>
+        <p></p>
+    </div>
+</div>*@
+<div class="container">
+    <div class="row">
+        <div class="col">
             @Html.DisplayNameFor(model => model.Name)
-        </dt>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-        <dt>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Type)
-        </dt>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
-
-        <dt>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Color)
-        </dt>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-
-        <dt>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Season)
-        </dt>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
-
-        <dt>
+        <div class="col">
             @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
+        </div>
 
-        <dd>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+
+        <div class="col">
+            @Html.DisplayFor(model => model.Photo)
+        </div>
+
+        <div class="col">
+            @Html.DisplayFor(model => model.Type)
+        </div>
+
+        <div class="col">
+            @Html.DisplayFor(model => model.Color)
+        </div>
+
+        <div class="col">
+            @Html.DisplayFor(model => model.Season)
+        </div>
+
+        <div class="col">
             @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-    </dl>
+        </div>
+    </div>
 </div>
+@*<dl class="dl-horizontal">
+            <dt>
+
+            </dt>
+
+            <dd>
+
+            </dd>
+
+            <dt>
+
+            </dt>
+
+            <dd>
+
+            </dd>
+
+            <dt>
+
+            </dt>
+
+            <dd>
+
+            </dd>
+
+            <dt>
+
+            </dt>
+
+            <dd>
+
+            </dd>
+
+            <dt>
+
+            </dt>
+
+            <dd>
+
+            </dd>
+
+            <dt>
+
+            </dt>
+
+            <dd>
+
+            </dd>
+
+        </dl>
+    </div>*@
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
+    <button class="button">@Html.ActionLink("Edit", "Edit", new { id = Model.TopID })</button>
+    <button class="button">@Html.ActionLink("Back to List", "Index")</button>
 </p>
